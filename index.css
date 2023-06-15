@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Roboto Regular', sans-serif;
+    background-color: grey;
+    max-height: 100vh;
+    max-width: 100%;
+    color: hsl(234, 29%, 20%);
+    margin: 0;
+}
+
+.newsletter {
+    background-color: white;
+    max-width: 900px;
+    border-radius: 30px;
+    display: block;
+}
+
+.newsletter__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.newsletter__image {}
+
+.newsletter__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    padding-left: 2rem;
+}
+
+.newsletter__title {
+    font-family: 'Roboto Bold', sans-serif;
+    margin: 0;
+    margin-top: 4rem;
+    font-size: 56px;
+    width: fit-content;
+}
+
+.newsletter__subtitle {
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 22px;
+    width: fit-content;
+}
+
+.newsletter__list {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    list-style-type: none;
+}
+
+.newsletter__list-item {
+    background-image: url(./assets/images/icon-list.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 40px;
+    margin-bottom: 1em;
+    line-height: 22px;
+    vertical-align: center;
+    height: 22px;
+    font-size: 16px;
+}
+
+.newsletter__span {
+    font-family: 'Roboto Bold', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+    font-size: 12px;
+}
+
+.newsletter__input {
+    padding: 0;
+    height: 3.5em;
+    padding-left: 1rem;
+    border: 1px hsl(231, 7%, 60%) solid;
+    border-radius: 5px;
+}
+
+.newsletter__button {
+    font-family: 'Roboto Bold', sans-serif;
+    letter-spacing: .5px;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 1.5rem;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+}

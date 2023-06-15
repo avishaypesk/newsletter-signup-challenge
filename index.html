@@ -7,20 +7,10 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./index.css">
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -44,24 +34,24 @@
 
         <span class="newsletter__span">Email address</span>
 
-        <input class="newsletter__input" placeholder="email@company.com" type="email" value="email" required>
+        <input class="newsletter__input" placeholder="email@company.com" type="email" required>
 
         <button class="newsletter__button" type="button">Subscribe to monthly newsletter</button>
 
       </div>
-      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign up illustration" />
-
-      Thanks for subscribing!
-
-      A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.
-
-      Dismiss message
-
-
+      <img class="newsletter__image" src="./assets/images/illustration-sign-up-desktop.svg"
+        alt="sign up illustration" />
 
     </div>
   </div>
+  Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com.
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/avishaypesk" target="_blank">Avishay Peskin</a>.
