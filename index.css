@@ -30,7 +30,11 @@ body {
     padding: 1.5rem;
 }
 
-.newsletter__image {}
+.newsletter__image {
+    width: 400px;
+    height: 593px;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+}
 
 .newsletter__form {
     display: flex;
@@ -68,7 +72,7 @@ body {
     background-repeat: no-repeat;
     background-position: 0 50%;
     padding-left: 40px;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     line-height: 22px;
     vertical-align: center;
     height: 22px;
@@ -99,6 +103,76 @@ body {
     color: white;
     background-color: hsl(234, 29%, 20%);
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 1rem;
+}
+
+@media screen and (max-width: 870px) {
+
+    .newsletter__container {
+        padding: 0.5rem;
+    }
+
+    .newsletter__form {
+        padding-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .newsletter {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .newsletter__container {
+        height: fit-content;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .newsletter__image {
+        width: 375px;
+        height: 284px;
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
+
+    .newsletter__title {
+        margin-top: 2rem;
+        font-size: 40px;
+    }
+
+    .newsletter__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+        padding: 0 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .newsletter__list {
+        margin-top: 1.7rem;
+    }
+
+    .newsletter__list-item {
+        background-position: 0 0;
+        padding-left: 35px;
+        vertical-align: center;
+        height: fit-content;
+    }
+
+    .newsletter__span {
+        margin-top: 1.7rem;
+    }
+
+    .newsletter__input {
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .newsletter__button {
+        padding: 1.2rem;
+        font-size: 16px;
+    }
 }
