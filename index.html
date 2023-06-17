@@ -32,7 +32,7 @@
         </ul>
 
 
-        <span class="newsletter__span">Email address</span>
+        <span class="newsletter__span">Email address<span class="newsletter__error invisable">Valid email required</span></span>
 
         <input class="newsletter__input" placeholder="email@company.com" type="email" required>
 
@@ -43,17 +43,35 @@
 
     </div>
   </div>
-  Thanks for subscribing!
 
-  A confirmation email has been sent to ash@loremcompany.com.
-  Please open it and click the button inside to confirm your subscription.
 
-  Dismiss message
+  <div class="popup__overlay invisable">
 
+  <div class="newsletter__popup">
+
+  <div class="newsletter__popup-continer">
+    <img class="newsletter__popup-image" src="./assets/images/icon-success.svg" alt="newsletter success">
+
+  <div class="newsletter__popup-title">
+    Thanks for subscribing!
+  </div>
+
+  <p class="newsletter__popup-text">
+    A confirmation email has been sent to <span class="newsletter__popup-email"></span>.
+    Please open it and click the button inside to confirm your subscription.
+  </p>
+
+  <button class="newsletter__button newsletter__popup-button" type="button">Dismiss message</button>
+  </div>
+</div>
+
+</div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/avishaypesk" target="_blank">Avishay Peskin</a>.
+
+    <script src="index.js"></script>
   </div>
 </body>
 
