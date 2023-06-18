@@ -191,6 +191,12 @@ body {
     display: none;
 }
 
+.attribution {
+    background-color: antiquewhite;
+    position: absolute;
+    bottom: 0;
+}
+
 @media screen and (max-width: 870px) {
 
     .newsletter__container {
@@ -232,7 +238,7 @@ body {
         flex-direction: column;
         max-width: 380px;
         padding: 0 1.5rem;
-        padding-bottom: 2.5rem;
+        padding-bottom: 0.2rem;
     }
 
     .newsletter__list {
