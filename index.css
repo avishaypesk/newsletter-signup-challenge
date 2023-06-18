@@ -10,17 +10,18 @@
 
 body {
     font-family: 'Roboto Regular', sans-serif;
-    background-color: grey;
-    max-height: 100vh;
+    background-color: hsl(235, 18%, 26%);
+    min-height: 100vh;
     max-width: 100%;
     color: hsl(234, 29%, 20%);
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .newsletter {
-    margin: auto;
     background-color: white;
-    max-width: 900px;
     border-radius: 30px;
     display: block;
 }
@@ -42,6 +43,7 @@ body {
     flex-direction: column;
     max-width: 380px;
     padding-left: 2rem;
+    padding-right: 3rem;
 }
 
 .newsletter__title {
